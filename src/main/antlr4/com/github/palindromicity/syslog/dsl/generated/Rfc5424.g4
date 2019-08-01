@@ -37,7 +37,7 @@ grammar Rfc5424;
 
 }
 
- syslog_msg      : header sp structured_data (sp)? (msg)? #syslogMsg;
+ syslog_msg      : header sp structured_data (sp msg)? #syslogMsg;
 
  header          : pri? version? sp? timestamp sp hostname sp app_name sp procid sp msgid #syslogHeader;
 
