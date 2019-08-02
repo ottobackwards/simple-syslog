@@ -37,7 +37,7 @@ grammar Rfc3164;
 
 }
 
- syslog_msg      : header sp (msg)? #syslogMsg;
+ syslog_msg      : header (sp msg)? #syslogMsg;
 
  header          : pri? sp? timestamp sp hostname #syslogHeader;
 
